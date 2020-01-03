@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Compagnon';
+    src: url(../font/Compagnon-Medium.woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+/* Temporaire */
+body {
+    height: 6000px;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar{
+    width: 15px;
+    background: white;
+}
+body::-webkit-scrollbar-thumb{
+    background: url("../images/scroll.png") black;
+    height: 100px;
+}
+/*      Horizontale */
+#loupe-box::-webkit-scrollbar{
+    width: 15px;
+    background: white;
+    border-top: 1px solid black;
+}
+#loupe-box::-webkit-scrollbar-thumb{
+    background: black;
+}
+/*      Colones */
+.colone::-webkit-scrollbar{
+    width: 7px;
+    background: white;
+    border-left: solid .5px black;
+}
+.colone::-webkit-scrollbar-thumb{
+    background: black;
+}
+/* CURSOR Body
+body {
+    cursor: url('../images/cursor.png'), auto;
+}
+*/
+
+/* HEADER */
+/*      Loupe */
+#loupe-box {
+    cursor: url('../images/cursor30.png'), auto; /* cursor loupe */
+    height: 450px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+h1, #loupe2 {
+    width: 9000px;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    margin-top: -370px;
+    margin-bottom: -115px;
+    margin-left: -25px;
+    font-size: 30em;
+
+}
+#loupe2 {
+    font-size: 10em;
+}
+/*      Sous-titre */
+#sous-titre {
+    float: right;
+    padding-right: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+}
+
+/* UNDER-BOX LOGO */
+#under-box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 45px;
+    mix-blend-mode: difference;
+    padding-bottom: 150px;
+    margin-top: 25px;
+}
+#logo {   
+    width: 125px;
+    padding-left: 10px;
+}
+
+/* NAV */
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1.5px;
+    border-top: dashed 1px black;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    border-bottom: solid 1px black; ;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+}
+nav li {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    border-left: solid 1px black;
+}
+nav a{
+    color: black;
+    padding: 2px 80px;
+}
+nav ul {
+    border-right: solid 1px black ;
+}
+nav a:hover{
+    background: black;
+    color: white;
+}
+
+/* MAIN */
+/* SECTION MARQUE */
+#marque{
+    padding: 110px 0 100px 50px;
+    overflow: auto;
+}
+h2{
+    padding-bottom: 10px;
+    font-family: 'Compagnon';
+    font-size: 3em;
+}
+/*      texte */
+#presentation {
+    float: left;
+    width: 650px;
+    margin-right: 40px;
+    -webkit-column-count: 2;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
+}
+/*      image et légende */
+#graphique{
+    margin-top: 5px;
+}
+#graphique:hover{
+    mix-blend-mode: difference;
+}
+#legende{
+    float: left;
+    width: 290px;
+    margin-top: 5px;
+    font-family: 'Compagnon';
+    font-size: .6em;
+    text-align: justify;
+}
+
+/* SECTION PRODUIT */
+#produit{
+    height: 700px;
+    background: black url(../images/etoiles.png);
+    text-align: center;
+}
+#packshot{
+    margin: 150px;
+}
+
+/* SECTION CLIENTS */
+#clients{
+    padding: 110px 0 100px 50px;
+    overflow: auto;
+}
+#clients h3{
+    font-family: 'Compagnon';
+}
+/*      Colones */
+#wrap-colone{
+    width: 1000px;
+    height: 440px;
+    display: flex;
+}
+.colone{
+    width: 333px;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.colone:nth-child(2), .colone:first-child{
+    border-top: solid .5px black;
+    border-left: solid .5px black;
+    border-bottom: solid .5px black;
+}
+.colone:last-child{
+    border: solid .5px black;
+}
+.colone h3{
+    padding-bottom: 5px;
+}
+.colone p{
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
+    text-align: justify;
+}
+.colone img{
+    width: 305px;
+}
+
+/* SECTION CONTACT */
+#contact{
+    padding-top: 110px;
+    overflow: auto;
+}
+#contact h2{
+    margin-bottom: 30px;
+}
+/*      Formulaire */
+form{
+    padding: 0 0 100px 50px;
+    border-top: solid .5px black;
+}
+.form-colone{
+    float: left;
+    width: 300px;
+    height: 500px;
+}
+label{
+    font-family: 'Compagnon';
+    padding-right: 5px;
+}
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+input{
+    border: solid .5px black;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    width: 200px;
+}
+.info{
+    width: 250px;
+}
+#texte{
+    width: 500px;
+    padding-left: 3px;
+    padding-bottom: 250px;
+    margin: 6px 0 10px;
+    border: solid .5px black;
+    resize: none;
+}
+#bouton{
+    border: solid .5px white;
+    background: black;
+    color: white;
+    padding: 5px 0;
+    font-family: 'Compagnon';
+    font-size: .9em;
+    text-align: left;
+    padding-left: 15px;
+}
+#bouton:hover{
+    border: solid .5px black;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#bouton:active{
+    border: solid .5px white;
+    background: black;
+    color: white;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25px 0 0;
+    background: black;
+    color: white;
+    height: 4000px;
+    font-family: 'Poppins', sans-serif;
+}
+footer p{
+    text-align: right;
+    float: right;
+}

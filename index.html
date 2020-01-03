@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>HSL</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300i,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div id="loupe-box">
+                <h1 id="loupe1">Loupe de mesure pour professionnels</h1>
+                <p id="loupe2">Loupe de mesure pour professionnels du contrôle qualité dans les secteurs de l'imprimerie et du textile.</p>
+            </div>
+            <p id="sous-titre">Loupe de mesure pour professionnels du contrôle qualité dans les secteurs de l'imprimerie et du textile.</p>
+        </header>
+        <div id="under-box">
+            <a href="#"><img id="logo" src="images/logo-hsl-blanc.png" alt="logo hsl"></a>
+        </div>
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <li><a href="#marque">Présentation</a></li>
+                <li><a href="#produit">Loupe de mesure</a></li>
+                <li><a href="#clients">Nos clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+        <!--  PRÉSENTATION -->
+            <section id="marque">
+                <h2>La marque</h2>
+                <p id="presentation"><strong>HSL</strong> est une marque de loupe de mesure à l’usage des professionnels de contrôle qualité dans les domaines de l’impression et du textile. En lui empruntant ses initiales, HSL souhaite rendre hommage à l’astronome <strong>Henrietta Swan Leavitt</strong>. Ses découvertes sur les étoiles variables, dites céphéides, on permit de mesurer la distance entre la Terre et les galaxies. 
+                    Au début du XXe siècle on interdisait aux femmes l’accès aux télescopes, elles étaient employées dans les observatoires comme mains d’œuvre bon marché, et se cantonnaient à la tâche fastidieuse d’analyse des plaques photographiques, on les nommait alors les ­cumputers. 
+                    À la manière dont un imprimeur consulte les marques de repérages pour vérifier la bonne superposition de ses plaques offset, Leavitt détaillait minutieusement l’image formée par la superposition de deux plaques photographiques afin d’identifier ses étoiles variables. Elle publie un premier article 1908 dans les <cite>annales de l’observatoire d’Harvard</cite> nommé <cite>1777 Étoiles variables dans les Nuages de Magellan</cite>. D’après l’Académie royale de Suède <q> Une chandelle standard fiable était née, une première marque sur l’étalon de mesure cosmique qui est toujours utilisée aujourd’hui. En utilisant les céphéides, les astronomes allaient bientôt conclure que la Voie lactée n’était que l’une des très nombreuses galaxies dans l’Univers. </q> Entraînant des découvertes majeures comme la loi Hubble qui prouve l’expansion de l’univers et soutient la théorie du BigBang.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"><img id="graphique" src="images/henrietta-swan-leavitt.png" alt="Fig.2"></a>
+                <p id="legende" >Plot from a paper prepared by Leavitt in 1912. The horizontal axis is the logarithm of the period of the corresponding Cepheid, and the vertical axis is its magnitude. The lines drawn connect points corresponding to the stars' minimum and maximum brightness, respectively.</p>
+            </section>
+        <!-- PRODUIT -->
+            <section id="produit">
+                <img id="packshot" src="images/packshot.png" alt="photo du packshot">
+            </section>
+        <!-- CLIENTS -->
+            <section id="clients">
+                <h2>Nos clients</h2>
+                <div id="wrap-colone">
+                    <div class="colone">
+                        <h3>Professionnels du textile</h3>
+                        <p>Comme son nom l’indique, le compte-fils a d’abord servi dans l’industrie textile, pour vérifier la densité de la trame d'un tissu, les points d'un tricot. Le compte-fils utilisé notamment par les canuts lyonnais se nomme quart de pouce, du nom de l’unité de mesure qu’ils employaient et qui s’est maintenue.</p>
+                        <img src="images/textile.jpg" alt="photographie d'un imprimeur">
+                    </div>
+                    <div class="colone">
+                        <h3>Imprimeurs</h3>
+                        <p>L’usage du compte-fils s’est généralisé dans les arts graphiques et l’imprimerie : contrôle de la composition, de la trame, de la photogravure. Il permet quelquefois de détecter des défauts sur la plaque d'impression ou la feuille imprimée et sert également à contrôler le repérage. Il permet aussi de déterminer la nature d’un document imprimé tel qu’une gravure ou une estampe.</p>
+                        <img src="images/clients-imprimeur.jpg" alt="photographie d'un imprimeur">
+                        <img src="images/clients-a.png" alt="superpostion a">
+                    </div>
+                    <div class="colone">
+                        <h3>Photographes</h3>
+                        <p>Le compte-fils sert à examiner le grain d'un négatif photographique, celui d'un tirage, et d’en évaluer la qualité de contraste et de netteté. Par ailleurs, on peut aussi l’utiliser pour contrôler la qualité de juxtaposition des pixels sur un écran d'ordinateur ou un téléviseur.</p>
+                        <img src="images/labo.jpg" alt="salle de développement photo">
+                        <img src="images/planche-contact.jpg" alt="planche contact">
+                    </div>
+                </div>
+            </section>
+        <!-- CONTACT -->
+            <section id="contact">
+                <form>
+                    <h2>Contact</h2>
+                    <div class="form-colone">
+                        <label for="nom">Votre nom :</label>
+                        <input  class="info" type="text" placeholder="Henrietta">
+                        <br>
+                        <label for="email">Votre e-mail :</label>
+                        <input class="info" type="email" placeholder="henrietta@hsl.com">
+                    </div>
+                    <div>
+                        <label for="objet">Objet :</label>
+                        <input class="info" type="text" placeholder="Passer une commande">
+                        <br>
+                        <label for="objet">Message :</label>
+                        <br>
+                        <textarea id="texte" name="message" cols="40" rows="5" placeholder="Tapez ici votre message"></textarea>
+                        <br>
+                        <input id="bouton" type="submit" value="Envoyer à HSL"> <!--Bouton-->
+                        <input type="hidden" name="send-to" value="acadillon@gmail.com">
+                    </div>  
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>HSL</p>
+            <p>Rue de la libertée, 42<br>1060 Saint-Gilles<br>Bruxelles BE</p>
+        </footer>
+    </body>
+</html>
